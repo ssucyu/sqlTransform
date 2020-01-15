@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="sun.IndexResultVO" table="index_result">
+		<id name="id" column="id" >
+			<generator class="native"/>
+		</id>
+		
+		 <property name="creatorId" column="creator_id" />
+		<property name="updatedTime" column="updated_time"/>
+		<property name="createTime" column="create_time"/>
+		<property name="updatorId" column="updator_id"/>
+		<property name="indexCode" column="index_code"/>
+		<property name="indexName" column="index_name"/>
+		<property name="indexValue"  column="index_value"/>
+		<property name="lastYearSame" column="last_year_same"/>
+		<property name="yearOnYearCent" column="year_on_year_cent"/>
+		<property name="monthOnMonthCent" column="month_on_month_cent"/>
+		<property name="plannedSpeed" column="planned_speed"/>
+		<property name="indexWarning" column="index_warning"/>
+		<property name="orgMrid"  column="org_mrid"/>
+		<property name="orgName" column="org_name"/>
+		<property name="orgLevel" column="org_level"/>
+		<property name="indexType" column="index_type"/>
+		<property name="submitWay" column="submit_way"/>
+		<property name="lastYearTotal" column="last_year_total"/>
+		<property name="totalValue"  column="total_value"/>
+		<property name="totalYearCent" column="total_year_cent"/>
+		<property name="indexAimValue" column="index_aim_value"/>
+		<property name="countTime" column="count_time"/>
+		<property name="indexId" column="index_id"/>
+		<property name="countCycle" column="count_cycle"/>
+		
+		
+		
+	</class>
+</hibernate-mapping>
